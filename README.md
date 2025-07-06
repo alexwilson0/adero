@@ -7,6 +7,8 @@
 
 This repository contains a multi-stage machine learning-based tool which provides an accelerated approach to early aircraft wing design. ADERO cuts a months-long design process down to as little as a minute. The user inputs their contraints like cruise altitude, aircraft velocity, and more; then the system draws upon several surrogate models, trained on organic data, to produce an aerodynamically and structurally viable wing. This is packaged inside a robust GUI that enables inspeciton of the 3D wing geometry, its internal structure, and the generated data values. An additional functionality in the GUI enables the user to use the individual surrogate models to predict aerodynamic/structural performance given a set of geometric inputs.
 
+![Main GUI](images/gui.png)
+
 ### Features
 
 - Predicts wing geometry and internal structure from input mission profiles
