@@ -25,18 +25,18 @@ This repository contains a multi-stage machine learning-based tool which provide
 
 <details>
   <summary>Click to expand</summary>
-  adero/
-├── adero/
-│ ├── gui.py # Main application launcher
-│ ├── Airfoil_Optimizer/ # Airfoil NN model + scaler
-│ ├── Planform_Optimizer/ # Planform optimizer + models
-│ ├── Structural_Optimizer/ # Structural layout predictor
-│ ├── Wing_Box_Optimizer/ # Wing box and load modeling
-│ ├── airfoils/ # Airfoil .dat files
-│ └── ... # Supporting modules
-├── environment.yml # Conda environment
-├── .dvc/ # DVC config and tracking
-└── README.md
+  adero/  
+├── adero/  
+│ ├── gui.py # Main application launcher  
+│ ├── Airfoil_Optimizer/ # Airfoil NN model + scaler  
+│ ├── Planform_Optimizer/ # Planform optimizer + models  
+│ ├── Structural_Optimizer/ # Structural layout predictor  
+│ ├── Wing_Box_Optimizer/ # Wing box and load modeling  
+│ ├── airfoils/ # Airfoil .dat files  
+│ └── ... # Supporting modules  
+├── environment.yml # Conda environment  
+├── .dvc/ # DVC config and tracking  
+└── README.md  
 </details>
 
 ### How to Clone and Run
@@ -44,44 +44,44 @@ This repository contains a multi-stage machine learning-based tool which provide
 ADERO uses [DVC](https://dvc.org) and Amazon S3 to manage large ML models. Follow these steps to download and run the app:
 
 **1. Clone the Repository**
-'''bash
-git clone https://github.com/alexwilson0/adero.git
-cd adero
+'''bash  
+git clone https://github.com/alexwilson0/adero.git  
+cd adero  
 
 **2. Set Up the Environment**
-'''bash
-conda env create -f environment.yml
-conda activate adero
+'''bash  
+conda env create -f environment.yml  
+conda activate adero  
 
 **3. Install DVC with S3 Support**
-'''bash
-pip install "dvc[s3]"
+'''bash  
+pip install "dvc[s3]"  
 
 **4. Export AWS Credentials**
-**macOS/Linux:**
-'''bash
-export AWS_ACCESS_KEY_ID=AKIAUAOLIGAHEWF3JFW2
-export AWS_SECRET_ACCESS_KEY=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
+**macOS/Linux:**  
+'''bash  
+export AWS_ACCESS_KEY_ID=AKIAUAOLIGAHEWF3JFW2  
+export AWS_SECRET_ACCESS_KEY=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  
 
 **Windows (PowerShell):**
-'''powershell
-$env:AWS_ACCESS_KEY_ID=AKIAUAOLIGAHEWF3JFW2
-$env:AWS_SECRET_ACCESS_KEY=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
+'''powershell  
+$env:AWS_ACCESS_KEY_ID=AKIAUAOLIGAHEWF3JFW2  
+$env:AWS_SECRET_ACCESS_KEY=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  
 
 **5. Pull the ML Models from S3**
-'''bash
-dvc pull
+'''bash  
+dvc pull  
 
 **6. Launch the Application**
-'''bash
-python adero/gui.py
+'''bash  
+python adero/gui.py  
 
 ### Know the Team
-Charlie Williams - Team Manager, Aerodynamics (cpw1g21@soton.ac.uk)
-Alfred Vincent - Aerodynamics (ajv1g21@soton.ac.uk)
-Alexander Wilson - ML & Software (atcw1g21@soton.ac.uk)
-Darius Wurzbacher - ML & Software (dw3g21@soton.ac.uk)
-Mingxuan Soong - Structural (ms10n20@soton.ac.uk)
-David Collyer - Structural (dc3g20@soton.ac.uk)
+Charlie Williams - Team Manager, Aerodynamics (cpw1g21@soton.ac.uk)  
+Alfred Vincent - Aerodynamics (ajv1g21@soton.ac.uk)  
+Alexander Wilson - ML & Software (atcw1g21@soton.ac.uk)  
+Darius Wurzbacher - ML & Software (dw3g21@soton.ac.uk)  
+Mingxuan Soong - Structural (ms10n20@soton.ac.uk)  
+David Collyer - Structural (dc3g20@soton.ac.uk)  
 
 This project was originally conceived and developed as a group design project for The University of Southampton.
