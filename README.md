@@ -24,24 +24,6 @@ This repository contains a multi-stage machine learning-based tool which provide
 - DVC for model versioning
 - Amazon S3 for model storage
 
-### Project Structure
-
-<details>
-  <summary>Click to expand</summary>
-  adero/  
-├── adero/  
-│ ├── gui.py # Main application launcher  
-│ ├── Airfoil_Optimizer/ # Airfoil NN model + scaler  
-│ ├── Planform_Optimizer/ # Planform optimizer + models  
-│ ├── Structural_Optimizer/ # Structural layout predictor  
-│ ├── Wing_Box_Optimizer/ # Wing box and load modeling  
-│ ├── airfoils/ # Airfoil .dat files  
-│ └── ... # Supporting modules  
-├── environment.yml # Conda environment  
-├── .dvc/ # DVC config and tracking  
-└── README.md  
-</details>
-
 ### How to Clone and Run
 
 ADERO uses [DVC](https://dvc.org) and Amazon S3 to manage large ML models. Follow these steps to download and run the app:
