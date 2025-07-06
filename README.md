@@ -1,3 +1,4 @@
+![Logo](images/logo.png)
 # ADERO: Aircraft Design Exploration with Regression & Optimisation
 ## A Machine Learning Based Design Tool to Aid Early Aircraft Design & Optimisation
 
