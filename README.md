@@ -60,7 +60,7 @@ conda activate adero
 ```bash  
 pip install "dvc[s3]"  
 ```
-**4. Export AWS Credentials**
+**4. Export AWS Credentials**  
 **macOS/Linux:**  
 ```bash  
 export AWS_ACCESS_KEY_ID=AKIAUAOLIGAHEWF3JFW2  
