@@ -1,0 +1,5 @@
+outs:
+- md5: cae3662fe1a30d8e128d1f02726254f6
+  size: 1349569
+  hash: md5
+  path: best_aerofoil_nn.keras
