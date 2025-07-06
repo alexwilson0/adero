@@ -1,0 +1,7 @@
+[core]
+    remote = s3remote
+['remote "gdrive_remote"']
+    url = gdrive://1ONRVvmNtwZbwwosXL2gwe2zW67MNNTK5
+['remote "s3remote"']
+    url = s3://adero-models
+    endpointurl = https://s3.eu-north-1.amazonaws.com

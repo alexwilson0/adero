@@ -1,0 +1,5 @@
+outs:
+- md5: 90872003809201540f472c3bb0f15d75
+  size: 338998
+  hash: md5
+  path: NeuralNetwork.keras
