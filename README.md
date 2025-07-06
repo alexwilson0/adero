@@ -44,36 +44,36 @@ This repository contains a multi-stage machine learning-based tool which provide
 ADERO uses [DVC](https://dvc.org) and Amazon S3 to manage large ML models. Follow these steps to download and run the app:
 
 **1. Clone the Repository**
-'''bash  
+```bash  
 git clone https://github.com/alexwilson0/adero.git  
 cd adero  
 
 **2. Set Up the Environment**
-'''bash  
+```bash  
 conda env create -f environment.yml  
 conda activate adero  
 
 **3. Install DVC with S3 Support**
-'''bash  
+```bash  
 pip install "dvc[s3]"  
 
 **4. Export AWS Credentials**
 **macOS/Linux:**  
-'''bash  
+```bash  
 export AWS_ACCESS_KEY_ID=AKIAUAOLIGAHEWF3JFW2  
 export AWS_SECRET_ACCESS_KEY=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  
 
 **Windows (PowerShell):**
-'''powershell  
+```powershell  
 $env:AWS_ACCESS_KEY_ID=AKIAUAOLIGAHEWF3JFW2  
 $env:AWS_SECRET_ACCESS_KEY=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  
 
 **5. Pull the ML Models from S3**
-'''bash  
+```bash  
 dvc pull  
 
 **6. Launch the Application**
-'''bash  
+```bash  
 python adero/gui.py  
 
 ### Know the Team
