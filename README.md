@@ -42,22 +42,11 @@ conda activate adero
 ```bash  
 pip install "dvc[s3]"  
 ```
-**4. Export AWS Credentials**  
-**macOS/Linux:**  
-```bash  
-export AWS_ACCESS_KEY_ID=AKIAUAOLIGAHEWF3JFW2  
-export AWS_SECRET_ACCESS_KEY=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  
-```
-**Windows (PowerShell):**
-```powershell  
-$env:AWS_ACCESS_KEY_ID=AKIAUAOLIGAHEWF3JFW2  
-$env:AWS_SECRET_ACCESS_KEY=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  
-```
-**5. Pull the ML Models from S3**
+**4. Pull the ML Models from S3**
 ```bash  
 dvc pull  
 ```
-**6. Launch the Application**
+**5. Launch the Application**
 ```bash  
 python adero/gui.py  
 ```
