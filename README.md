@@ -57,6 +57,9 @@ Alfred Vincent - Aerodynamics (ajv1g21@soton.ac.uk)
 Alexander Wilson - ML & Software (atcw1g21@soton.ac.uk)  
 Darius Wurzbacher - ML & Software (dw3g21@soton.ac.uk)  
 Mingxuan Soong - Structural (ms10n20@soton.ac.uk)  
-David Collyer - Structural (dc3g20@soton.ac.uk)  
+David Collyer - Structural (dc3g20@soton.ac.uk)
+
+Ondrej Hovorka - Supervisor
+Andrea Da Ronch - Co-Supervisor
 
 This project was originally conceived and developed as a group design project for The University of Southampton.
