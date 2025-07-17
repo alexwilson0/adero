@@ -5,13 +5,14 @@
 
 ### Description
 
-This repository contains a multi-stage machine learning-based tool which provides an accelerated approach to early aircraft wing design. ADERO cuts a months-long design process down to as little as a minute. The user inputs their contraints like cruise altitude, aircraft velocity, and more; then the system draws upon several surrogate models, trained on organic data, to produce an aerodynamically and structurally viable wing. This is packaged inside a robust GUI that enables inspeciton of the 3D wing geometry, its internal structure, and the generated data values. An additional functionality in the GUI enables the user to use the individual surrogate models to predict aerodynamic/structural performance given a set of geometric inputs.
+This repository contains a multi-stage machine learning-based tool which provides an accelerated approach to early aircraft wing design. ADERO cuts a lengthy design process down to as little as a minute. The user inputs their contraints like cruise altitude, aircraft velocity, and more; then the system draws upon several surrogate models, trained on organic data, to produce an aerodynamically and structurally viable wing. This is packaged inside a robust GUI that enables inspeciton of the 3D wing geometry, its internal structure, and the generated data values. An additional functionality in the GUI enables the user to use the individual surrogate models to predict aerodynamic/structural performance given a set of geometric inputs.
 
 ![Main GUI](images/gui.png)
 
 ### Features
 
 - Predicts wing geometry and internal structure from input mission profiles
+- Alternatively predict performance based on geometric or structural inputs calling surrogate models directly
 - Combines multiple optimisation modules (aerofoil, wing-box, planform, structural)
 - Fully interactive GUI for streamlined user experience
 - Large ML models managed with DVC and stored in Amazon S3
@@ -20,7 +21,7 @@ This repository contains a multi-stage machine learning-based tool which provide
 
 - Python >=3.8
 - Keras / TensorFlow
-- Scikit-learn, NumPy, Matplotlib
+- Scikit-learn, NumPy, Plotly, pymoo, PyQt 
 - DVC for model versioning
 - Amazon S3 for model storage
 
